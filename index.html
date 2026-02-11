@@ -10,21 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Imported Bricolage Grotesque (Headlines) and DM Sans (Body) -->
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;400;600;800&family=DM+Sans:opsz,wght@9..40,300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;300;400;600;800&family=DM+Sans:opsz,wght@9..40,300;400;500;700&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        paper: '#E4E2DD',
-                        ink: '#2B2117',
+                        paper: '#F8F7F5',
+                        ink: '#2B2118',
                         accent: '#DB4B2B',
                     },
                     fontFamily: {
-                        // User requested Bricolage Grotesque for headlines
                         display: ['"Bricolage Grotesque"', 'sans-serif'],
-                        // User requested DM Sans for everything else
                         sans: ['"DM Sans"', 'sans-serif'],
                     },
                     animation: {
@@ -47,73 +45,85 @@
     </script>
     <style>
         body {
-            background-color: #E4E2DD;
-            color: #2B2117;
+            background-color: #F8F7F5;
+            color: #2B2118;
             font-family: 'DM Sans', sans-serif;
         }
-        h1, h2 {
+        h1, h2, h3, .font-display {
             font-family: 'Bricolage Grotesque', sans-serif;
         }
     </style>
-    <!-- React Imports maintained for future use -->
-    <script type="importmap">
-    {
-      "imports": {
-        "react/": "https://esm.sh/react@^19.2.4/",
-        "react": "https://esm.sh/react@^19.2.4",
-        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-        "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
-      }
-    }
-    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
 <link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-paper text-ink min-h-screen flex flex-col items-center justify-center p-6 selection:bg-accent selection:text-white">
+<body class="bg-paper text-ink min-h-screen flex flex-col selection:bg-accent selection:text-white overflow-x-hidden">
     
-    <main class="max-w-xl w-full text-center flex flex-col items-center relative z-10 py-12">
-        
-        <!-- 1. Logo (Top Center) -->
-        <div class="animate-fade-in-up" style="animation-delay: 0.1s;">
-            <img src="assets/logo.png" alt="New Chapter Inspection & Consulting Logo" class="mx-auto w-48 mb-8 object-contain">
+    <!-- 1. Header: Split Layout (Logo Left, CTA Right) -->
+    <header class="w-full px-6 py-6 md:px-12 flex justify-between items-center relative z-20">
+        <!-- Logo (Left) -->
+        <!-- Fixed height to match button (h-10 for mobile, h-12 for desktop), width auto -->
+        <div class="animate-fade-in h-10 md:h-12 flex items-center">
+            <img src="/assets/image_0.png" alt="New Chapter Inspection & Consulting Logo" class="h-full w-auto object-contain">
         </div>
 
-        <!-- 2. Headline: OPENING SOON! (Bricolage Grotesque) -->
-        <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-ink tracking-tight mb-10 animate-fade-in-up" style="animation-delay: 0.2s;">
-            OPENING SOON!
-        </h1>
-
-        <!-- 3. Profile Image -->
-        <div class="w-40 h-40 md:w-48 md:h-48 mb-8 animate-fade-in-up" style="animation-delay: 0.3s;">
-            <div class="w-full h-full overflow-hidden rounded-full shadow-lg border-4 border-white/40">
-                <img src="/assets/jake-profile.jpg" alt="Jake Choi - New Chapter Inspection" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
-            </div>
-        </div>
-
-        <!-- 4. Greeting (Bricolage Grotesque) -->
-        <h2 class="text-3xl md:text-4xl font-display font-semibold text-ink mb-6 animate-fade-in-up" style="animation-delay: 0.4s;">
-            Hi, I'm Jake!
-        </h2>
-
-        <!-- 5. Body Paragraph (DM Sans) -->
-        <div class="mb-10 animate-fade-in-up" style="animation-delay: 0.5s;">
-            <p class="text-lg md:text-xl font-sans font-light leading-relaxed text-ink/80 max-w-lg mx-auto">
-                Based in Vancouver, BC, New Chapter Inspection & Consulting brings a unique builder’s perspective to the inspection industry. Led by Jake Choi—a Red Seal Carpenter with over a decade of General Contracting experience and a fully licensed inspector—we see beyond the surface. We are preparing to offer inspections backed by real structural depth and technical insight, ensuring your next big move starts on solid ground.
-            </p>
-        </div>
-
-        <!-- 6. CTA Button (Reverted to Mailto, DM Sans) -->
-        <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
-            <a href="mailto:info@newchapterinspectbc.com" class="inline-flex items-center justify-center bg-accent text-white px-10 py-4 rounded-full text-lg font-sans font-medium tracking-wide hover:bg-ink transition-all duration-300 shadow-xl hover:scale-105">
+        <!-- CTA Button (Right) -->
+        <div class="animate-fade-in">
+            <a href="mailto:info@newchapterinspectbc.com" class="inline-flex items-center justify-center bg-accent text-white px-5 py-2.5 md:px-8 md:py-3 rounded-full text-sm md:text-base font-sans font-medium hover:bg-ink transition-all duration-300 shadow-md whitespace-nowrap">
                 Get in Touch
             </a>
+        </div>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center p-6 w-full max-w-3xl mx-auto relative z-10">
+        
+        <!-- Text Group -->
+        <div class="w-full mb-10 md:mb-12 animate-fade-in-up flex flex-col items-center justify-center" style="animation-delay: 0.1s;">
+            <!-- "Our new site is" - Left Aligned & Smaller -->
+            <p class="w-full text-left text-lg md:text-2xl font-display font-light text-ink/80 mb-0 md:mb-1 tracking-tight">
+                Our new site is
+            </p>
+            <h1 class="text-5xl md:text-8xl lg:text-9xl font-display font-extrabold text-ink tracking-tighter leading-none uppercase text-accent text-center w-full">
+                COMING SOON!
+            </h1>
+        </div>
+
+        <!-- Center the body content -->
+        <div class="flex flex-col items-center text-center">
+            
+            <!-- Greeting -->
+            <h2 class="text-3xl md:text-5xl font-display font-semibold text-ink mb-6 animate-fade-in-up" style="animation-delay: 0.3s;">
+                Hi, I'm Jake!
+            </h2>
+
+            <!-- Original Body Content (Paragraph Only) -->
+            <div class="animate-fade-in-up w-full" style="animation-delay: 0.4s;">
+                
+                <!-- Full Intro Paragraph -->
+                <p class="text-base md:text-xl font-sans font-light leading-relaxed text-ink/80 max-w-xl mx-auto">
+                    Based in Vancouver, BC, New Chapter Inspection & Consulting brings a unique builder’s perspective to the inspection industry. With over a decade of General Contracting experience, we see beyond the surface. We are preparing to offer inspections backed by real structural depth and technical insight, ensuring your next big move starts on solid ground.
+                </p>
+            </div>
+
         </div>
 
     </main>
 
-    <!-- Footer Copyright (DM Sans) -->
-    <footer class="absolute bottom-6 w-full text-center z-0 opacity-60">
-        <p class="text-[10px] font-sans uppercase tracking-widest text-ink">&copy; 2026 New Chapter Inspection & Consulting</p>
+    <!-- 3. Footer: Sticky Bottom -->
+    <footer class="w-full text-center py-6 px-4 mt-auto z-0 opacity-60">
+        <p class="text-[10px] md:text-xs font-sans uppercase tracking-widest text-ink leading-relaxed">
+            &copy; 2026 New Chapter Inspection & Consulting
+        </p>
     </footer>
 
 <script type="module" src="/index.tsx"></script>
