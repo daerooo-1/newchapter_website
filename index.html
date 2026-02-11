@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Chapter Inspection & Consulting - Opening Soon</title>
-    <meta property="og:title" content="New Chapter Inspection & Consulting">
-<meta property="og:description" content="Professional Home Inspection & Consulting based in Vancouver, BC. Bringing a builder's perspective to your home. Opening Soon!">
-<meta property="og:image" content="https://newchapter-website.pages.dev/assets/og-logo.png">
-<meta property="og:url" content="https://newchapter-website.pages.dev/">
-<meta property="og:type" content="website">
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Fonts Configuration -->
@@ -69,23 +64,14 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-paper text-ink min-h-screen flex flex-col selection:bg-accent selection:text-white overflow-x-hidden">
     
-    <!-- 1. Header: Split Layout (Logo Left, CTA Right) -->
-    <header class="w-full px-6 py-6 md:px-12 flex justify-between items-center relative z-20">
-        <!-- Logo (Left) -->
-        <!-- Fixed height to match button (h-10 for mobile, h-12 for desktop), width auto -->
+    <!-- 1. Header: Centered Logo -->
+    <header class="w-full px-6 py-6 md:px-12 flex justify-center items-center relative z-20">
+        <!-- Logo (Centered) -->
         <div class="animate-fade-in h-10 md:h-12 flex items-center">
-            <img src="assets/logo.svg" alt="New Chapter Inspection & Consulting Logo" class="h-full w-auto object-contain">
-        </div>
-
-        <!-- CTA Button (Right) -->
-        <div class="animate-fade-in">
-            <a href="mailto:info@newchapterinspectbc.com" class="inline-flex items-center justify-center bg-accent text-white px-5 py-2.5 md:px-8 md:py-3 rounded-full text-sm md:text-base font-sans font-medium hover:bg-ink transition-all duration-300 shadow-md whitespace-nowrap">
-                Get in Touch
-            </a>
+            <img src="/assets/logo.svg" alt="New Chapter Inspection & Consulting Logo" class="h-full w-auto object-contain">
         </div>
     </header>
 
@@ -120,6 +106,13 @@
                 </p>
             </div>
 
+            <!-- CTA Button (Moved to bottom) -->
+            <div class="mt-8 animate-fade-in-up" style="animation-delay: 0.5s;">
+                <a href="mailto:info@newchapterinspectbc.com" class="inline-flex items-center justify-center bg-accent text-white px-5 py-2.5 md:px-8 md:py-3 rounded-full text-sm md:text-base font-sans font-medium hover:bg-ink transition-all duration-300 shadow-md whitespace-nowrap">
+                    Get in Touch
+                </a>
+            </div>
+
         </div>
 
     </main>
@@ -131,6 +124,5 @@
         </p>
     </footer>
 
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
