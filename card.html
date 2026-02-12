@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Jake Choi - New Chapter Inspection</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://newchapterinspectbc.com/card.html">
+    <meta property="og:title" content="Jake Choi - New Chapter Inspection">
+    <meta property="og:description" content="Vancouver home inspector finding details with a builder's perspective.">
+    <meta property="og:image" content="https://newchapterinspectbc.com/assets/logo.png"> <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Fonts Configuration -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;600;700&display=swap" rel="stylesheet">
@@ -25,11 +31,11 @@
                         sans: ['"DM Sans"', 'sans-serif'],
                     },
                     animation: {
-                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
                     },
                     keyframes: {
                         fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '0%': { opacity: '0', transform: 'translateY(15px)' },
                             '100%': { opacity: '1', transform: 'translateY(0)' },
                         }
                     }
@@ -43,10 +49,8 @@
             color: #2B2118;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            /* Prevent text selection for app-like feel */
             user-select: none;
             -webkit-user-select: none;
-            /* Disable pull-to-refresh on mobile */
             overscroll-behavior-y: none; 
         }
     </style>
@@ -62,79 +66,94 @@
 }
 </script>
 </head>
-<body class="min-h-[100dvh] flex flex-col justify-between p-6 overflow-hidden relative selection:bg-accent selection:text-white">
+<body class="min-h-[100dvh] flex flex-col p-6 overflow-x-hidden relative selection:bg-accent selection:text-white">
 
-    <!-- Subtle Grain Texture -->
     <div class="absolute inset-0 opacity-[0.04] pointer-events-none mix-blend-multiply" 
          style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg==');">
     </div>
 
-    <!-- 1. Header: Logo (Centered) -->
-    <header class="w-full flex justify-center py-4 relative z-10 animate-fade-in-up" style="animation-delay: 0.1s;">
-        <div class="h-12 md:h-14">
-             <img src="/assets/logo.svg" alt="New Chapter Inspection" class="h-full w-auto object-contain">
+    <header class="w-full flex justify-center py-6 relative z-10 animate-fade-in-up" style="animation-delay: 0.05s;">
+        <div class="h-16 w-full flex justify-center items-center">
+             <img src="assets/logo.svg" alt="New Chapter Inspection" class="h-full w-auto object-contain drop-shadow-sm">
         </div>
     </header>
 
-    <!-- 2. Main Content: Profile & Bio -->
-    <main class="flex-grow flex flex-col justify-center items-center text-center w-full max-w-sm mx-auto relative z-10 space-y-8 -mt-6">
+    <main class="flex-grow flex flex-col items-center w-full max-w-sm mx-auto relative z-10 -mt-2">
         
-        <!-- Name & Title -->
-        <div class="space-y-4 animate-fade-in-up" style="animation-delay: 0.2s;">
-            <p class="text-accent font-sans text-[10px] font-bold tracking-[0.25em] uppercase leading-none">New Chapter Inspection & Consulting</p>
-            <h1 class="font-display font-bold text-5xl md:text-6xl text-ink leading-[0.9] tracking-tight">
+        <div class="text-center w-full animate-fade-in-up" style="animation-delay: 0.1s;">
+            <h1 class="font-display font-bold text-5xl text-ink leading-[0.9] tracking-tight mb-3">
                 Jake Choi
             </h1>
-            <p class="font-sans text-ink/80 text-sm font-medium tracking-wide">
-                Licensed Home Inspector
+            <p class="font-sans text-ink/60 text-sm font-bold tracking-widest uppercase">
+                Owner / Licensed Home Inspector
             </p>
         </div>
 
-        <!-- Visual Divider -->
-        <div class="w-12 h-[1px] bg-ink/10 animate-fade-in-up" style="animation-delay: 0.3s;"></div>
+        <div class="w-full h-px bg-ink/5 my-6 animate-fade-in-up" style="animation-delay: 0.15s;"></div>
 
-        <!-- Bio -->
-        <div class="animate-fade-in-up px-2" style="animation-delay: 0.4s;">
-            <p class="font-sans text-ink/80 text-lg md:text-xl leading-relaxed font-light">
-                "Vancouver home inspector finding details<br>with a builder's perspective."
+        <div class="text-center mb-8 px-2 animate-fade-in-up" style="animation-delay: 0.2s;">
+            <p class="font-sans text-ink/80 text-lg leading-relaxed font-light italic text-center">
+                "Vancouver home inspector finding details with a builder's perspective."
             </p>
+        </div>
+
+        <div class="w-full flex flex-col gap-3 animate-fade-in-up" style="animation-delay: 0.3s;">
+            
+            <a href="tel:6725330062" class="group bg-white border border-ink/5 rounded-xl p-3 flex items-center gap-4 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all active:scale-[0.98]">
+                <div class="w-10 h-10 rounded-full bg-paper flex flex-shrink-0 items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="flex flex-col text-left overflow-hidden">
+                    <span class="text-[9px] uppercase tracking-widest text-ink/40 font-bold mb-0.5">Call</span>
+                    <span class="font-sans font-bold text-ink text-base truncate">672-533-0062</span>
+                </div>
+            </a>
+
+            <a href="sms:6725330062" class="group bg-white border border-ink/5 rounded-xl p-3 flex items-center gap-4 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all active:scale-[0.98]">
+                <div class="w-10 h-10 rounded-full bg-paper flex flex-shrink-0 items-center justify-center text-accent group-hover:bg-ink group-hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div class="flex flex-col text-left overflow-hidden">
+                    <span class="text-[9px] uppercase tracking-widest text-ink/40 font-bold mb-0.5">Text</span>
+                    <span class="font-sans font-bold text-ink text-base truncate">672-533-0062</span>
+                </div>
+            </a>
+
+            <a href="mailto:info@newchapterinspectbc.com" class="group bg-white border border-ink/5 rounded-xl p-3 flex items-center gap-4 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all active:scale-[0.98]">
+                <div class="w-10 h-10 rounded-full bg-paper flex flex-shrink-0 items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div class="flex flex-col text-left overflow-hidden">
+                    <span class="text-[9px] uppercase tracking-widest text-ink/40 font-bold mb-0.5">Email</span>
+                    <span class="font-sans font-bold text-ink text-sm md:text-base truncate">info@newchapterinspectbc.com</span>
+                </div>
+            </a>
+
+            <a href="https://newchapterinspectbc.com" class="group bg-white border border-ink/5 rounded-xl p-3 flex items-center gap-4 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all active:scale-[0.98]">
+                <div class="w-10 h-10 rounded-full bg-paper flex flex-shrink-0 items-center justify-center text-accent group-hover:bg-ink group-hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="flex flex-col text-left overflow-hidden">
+                    <span class="text-[9px] uppercase tracking-widest text-ink/40 font-bold mb-0.5">Website</span>
+                    <span class="font-sans font-bold text-ink text-base truncate">newchapterinspectbc.com</span>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="w-full mt-6 animate-fade-in-up" style="animation-delay: 0.4s;">
+            <a href="assets/contact.vcf" download class="w-full bg-accent text-white h-14 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-accent/20 active:scale-[0.98] transition-all duration-300 hover:bg-ink">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                <span class="font-sans font-bold text-sm tracking-widest uppercase">Save Contact</span>
+            </a>
         </div>
 
     </main>
 
-    <!-- 3. Actions: Buttons -->
-    <footer class="w-full max-w-sm mx-auto flex flex-col gap-3 relative z-10 pb-8 animate-fade-in-up" style="animation-delay: 0.5s;">
-        
-        <!-- Call Button (Accent Background) -->
-        <a href="tel:6725330062" class="group w-full bg-accent text-white h-14 rounded-full flex items-center justify-center gap-3 shadow-xl shadow-accent/20 active:scale-[0.98] transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span class="font-sans font-bold text-base md:text-lg tracking-wide">Call Now</span>
-        </a>
-
-        <!-- SMS Button (Ink Background) -->
-        <a href="sms:6725330062" class="group w-full bg-ink text-white h-14 rounded-full flex items-center justify-center gap-3 shadow-xl shadow-ink/20 active:scale-[0.98] transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            <span class="font-sans font-bold text-base md:text-lg tracking-wide">Send Text</span>
-        </a>
-
-        <!-- Email Button (Border Style) -->
-        <a href="mailto:info@newchapterinspectbc.com" class="group w-full bg-transparent border border-ink/20 text-ink h-14 rounded-full flex items-center justify-center gap-3 hover:bg-ink/5 active:scale-[0.98] transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            <span class="font-sans font-medium text-base md:text-lg tracking-wide">Email Us</span>
-        </a>
-
-        <!-- Website Button (Ghost Style) -->
-        <a href="https://newchapterinspectbc.com" class="group w-full flex items-center justify-center gap-2 py-2 opacity-60 hover:opacity-100 transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            <span class="font-sans font-semibold text-sm tracking-widest uppercase border-b border-transparent group-hover:border-ink">Visit Website</span>
-        </a>
-
-        <!-- Copyright -->
-        <div class="mt-2 text-center opacity-40">
-             <p class="text-[10px] uppercase tracking-widest text-ink font-sans">
-                &copy; 2026 New Chapter Inspection
-            </p>
-        </div>
+    <footer class="w-full py-6 flex justify-center opacity-40 relative z-10">
+        <p class="text-[10px] uppercase tracking-widest text-ink font-sans">
+            &copy; 2026 New Chapter Inspection
+        </p>
     </footer>
 
 </body>
