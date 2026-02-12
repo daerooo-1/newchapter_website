@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Choi - New Chapter Inspection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;800&family=DM+Sans:opsz,wght@9..40,300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { paper: '#F8F7F5', ink: '#2B2118', accent: '#DB4B2B' },
+                    fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['"DM Sans"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-paper text-ink min-h-[100dvh] flex items-center justify-center p-6 selection:bg-accent selection:text-white">
+    <div class="w-full max-w-sm bg-white rounded-[2.5rem] shadow-2xl overflow-hidden text-center flex flex-col items-center border border-ink/5">
+        
+        <div class="bg-ink w-full py-12 flex justify-center">
+            <img src="assets/logo.svg" alt="New Chapter Logo" class="h-12 w-auto object-contain">
+        </div>
+
+        <div class="p-10 w-full">
+            <h1 class="text-3xl font-display font-extrabold tracking-tight uppercase mb-1">Jake Choi</h1>
+            <p class="text-[10px] font-sans font-bold text-ink/40 tracking-[0.2em] uppercase mb-8">Red Seal Carpenter | Licensed Home Inspector</p>
+            
+            <p class="text-lg font-sans font-light leading-relaxed text-ink/80 mb-10">
+                <span class="font-bold text-ink">New Chapter Inspection</span><br>
+                Bringing a builder’s perspective to every detail. Expert home inspections you can trust in <span class="text-accent font-medium">Vancouver, BC.</span>
+            </p>
+
+            <div class="flex flex-col gap-3">
+                <a href="tel:6725330062" class="w-full bg-accent text-white py-4.5 rounded-2xl font-sans font-bold text-lg shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all">
+                    Call Now
+                </a>
+                <a href="sms:6725330062" class="w-full bg-ink text-white py-4.5 rounded-2xl font-sans font-bold text-lg shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all">
+                    Send a Text
+                </a>
+                <a href="mailto:info@newchapterinspectbc.com" class="w-full border-2 border-ink text-ink py-4 rounded-2xl font-sans font-bold text-lg hover:bg-ink hover:text-white transition-all">
+                    Email Me
+                </a>
+            </div>
+        </div>
+
+        <div class="pb-10 opacity-30">
+            <p class="text-[9px] font-sans uppercase tracking-[0.3em]">© 2026 New Chapter Inspection</p>
+        </div>
+    </div>
+</body>
+</html>
