@@ -8,11 +8,11 @@ interface SectionMarkerProps {
 
 export const SectionMarker: React.FC<SectionMarkerProps> = ({ label, className = "" }) => {
   return (
-    <div className={`flex items-center gap-6 text-[#db4b2b] ${className}`}>
+    <div className={`flex items-center gap-4 text-[#db4b2b] ${className}`}>
       <div className="flex items-center justify-center">
-        <Logo className="w-10 h-10 animate-spin-slow" />
+        <Logo className="w-[30px] h-[30px] animate-spin-slow" />
       </div>
-      <span className="text-[40px] font-black tracking-[0.4em] leading-none uppercase">
+      <span className="text-[30px] font-black tracking-[0.3em] leading-none uppercase">
         {label}
       </span>
     </div>
