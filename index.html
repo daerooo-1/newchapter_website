@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Chapter Inspection & Consulting</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts Configuration -->
+    <link href="https://cdn.jsdelivr.net/gh/hyzyla/nohemi@master/css/nohemi.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Brand Identity Colors (Requested)
+                        paper: '#E4E2DD',
+                        ink: '#2B2117',
+                        accent: '#DB4B2B',
+
+                        // App Component Compatibility Aliases (Mapped to Brand Colors)
+                        primary: '#E4E2DD', // Maps to paper
+                        wood: {
+                            800: '#4A3B2A',
+                            900: '#2B2117', // Maps to ink
+                        },
+                    },
+                    fontFamily: {
+                        serif: ['Nohemi', 'sans-serif'], 
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'heading-base': ['47px', { lineHeight: '52px', fontWeight: '400' }],
+                    },
+                    animation: {
+                        'spin-slow': 'spin 12s linear infinite',
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(15px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(43, 33, 24, 0.05)',
+                        'soft-hover': '0 10px 25px -3px rgba(43, 33, 24, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #E4E2DD;
+            color: #2B2117;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Apply specific heading styles for serif font */
+        .font-serif, .font-display {
+            font-family: 'Nohemi', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        /* Custom class for noise texture used in React components */
+        .bg-grain {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg==');
+            background-repeat: repeat;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
