@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { Logo } from "./Logo";
 
 const links = [
   { name: "Home", href: "/" },
@@ -52,7 +51,7 @@ export const Navbar = () => {
           {/* Logo */}
         <Link to="/" className="flex items-center py-2">
           <img 
-            src="/logo.png" 
+            src="/logo.svg" 
             alt="New Chapter Inspection & Consulting" 
             className="h-8 md:h-10 w-auto object-contain transition-opacity hover:opacity-90"
           />
