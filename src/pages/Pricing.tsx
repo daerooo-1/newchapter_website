@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Check, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { motion } from "motion/react";
 
