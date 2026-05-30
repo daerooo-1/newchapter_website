@@ -113,13 +113,13 @@ export const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="border-t border-ink/10 pt-20 pb-24"
+          className="pt-8 pb-14"
         >
-          <div className="flex flex-wrap items-start justify-center gap-16 md:gap-32">
+          <div className="flex flex-wrap items-start justify-center gap-14 md:gap-28">
             
             {/* credential-logo-consumer-protection */}
             <div className="flex flex-col items-center justify-start gap-5 text-center">
-              <div className="h-16 md:h-20 flex items-center justify-center">
+              <div className="h-24 md:h-28 flex items-center justify-center">
                 <img 
                   src="/images/cpbc-logo.png" 
                   alt="Consumer Protection BC Licensed Inspector" 
@@ -133,7 +133,7 @@ export const About = () => {
 
             {/* credential-logo-redseal */}
             <div className="flex flex-col items-center justify-start gap-5 text-center">
-              <div className="h-16 md:h-20 flex items-center justify-center">
+              <div className="h-24 md:h-28 flex items-center justify-center">
                 <img 
                   src="/images/redseal-logo.png" 
                   alt="Red Seal Carpenter" 
@@ -149,7 +149,7 @@ export const About = () => {
         </motion.div>
 
         {/* Why Choose Us Section */}
-        <div className="border-t border-ink/10 pt-32">
+        <div className="pt-20">
           {/* Layer 1: Intro */}
           <motion.div 
             initial="initial"
