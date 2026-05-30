@@ -107,6 +107,47 @@ export const About = () => {
           </div>
         </div>
 
+        {/* Credential Logo Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="border-t border-ink/10 pt-20 pb-24"
+        >
+          <div className="flex flex-wrap items-start justify-center gap-16 md:gap-32">
+            
+            {/* credential-logo-consumer-protection */}
+            <div className="flex flex-col items-center justify-start gap-5 text-center">
+              <div className="h-16 md:h-20 flex items-center justify-center">
+                <img 
+                  src="/images/cpbc-logo.png" 
+                  alt="Consumer Protection BC Licensed Inspector" 
+                  className="max-h-full object-contain"
+                />
+              </div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-ink/60 font-sans">
+                CPBC #89584
+              </p>
+            </div>
+
+            {/* credential-logo-redseal */}
+            <div className="flex flex-col items-center justify-start gap-5 text-center">
+              <div className="h-16 md:h-20 flex items-center justify-center">
+                <img 
+                  src="/images/redseal-logo.png" 
+                  alt="Red Seal Carpenter" 
+                  className="max-h-full object-contain"
+                />
+              </div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-ink/60 font-sans">
+                Red Seal Carpenter
+              </p>
+            </div>
+
+          </div>
+        </motion.div>
+
         {/* Why Choose Us Section */}
         <div className="border-t border-ink/10 pt-32">
           {/* Layer 1: Intro */}
@@ -162,37 +203,6 @@ export const About = () => {
                 Licensed inspection practice, recognized credentials, and hands-on field experience come together to support better-informed decisions.
               </p>
             </motion.div>
-          </motion.div>
-
-          {/* Layer 3: Credential/logo layer */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="pt-16 md:pt-24 border-t border-ink/5"
-          >
-            <div className="flex flex-wrap items-center justify-center gap-16 md:gap-32 opacity-40 hover:opacity-100 transition-opacity duration-700">
-              
-              {/* credential-logo-consumer-protection */}
-              <div className="h-16 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500">
-                <img 
-                  src="/images/cpbc-logo.png" 
-                  alt="Consumer Protection BC Licensed Inspector" 
-                  className="max-h-full object-contain"
-                />
-              </div>
-
-              {/* credential-logo-redseal */}
-              <div className="h-16 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500">
-                <img 
-                  src="/images/redseal-logo.png" 
-                  alt="Red Seal Carpenter" 
-                  className="max-h-full object-contain"
-                />
-              </div>
-
-            </div>
           </motion.div>
         </div>
 
