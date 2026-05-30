@@ -172,38 +172,23 @@ export const About = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="pt-16 md:pt-24 border-t border-ink/5"
           >
-            <div className="flex flex-wrap items-center justify-center md:justify-between gap-12 md:gap-20 opacity-40 hover:opacity-100 transition-opacity duration-700">
+            <div className="flex flex-wrap items-center justify-center gap-16 md:gap-32 opacity-40 hover:opacity-100 transition-opacity duration-700">
               
               {/* credential-logo-consumer-protection */}
               <div className="h-16 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500">
-                {/* TODO: Replace this logo placeholder with final PNG asset */}
                 <img 
-                  src="https://www.consumerprotectionbc.ca/wp-content/uploads/2017/01/CPBC_LicensedBy_4C-01.png" 
-                  alt="Consumer Protection BC" 
+                  src="/images/credentials/cpbc-logo.png" 
+                  alt="Consumer Protection BC Licensed Inspector" 
                   className="max-h-full object-contain"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-
-              {/* credential-logo-internachi */}
-              <div className="h-16 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500">
-                {/* TODO: Replace this logo placeholder with final PNG asset */}
-                <img 
-                  src="https://s3.amazonaws.com/uploads.nachi.org/logos/2022/InterNACHI-CPI-Logo.png" 
-                  alt="InterNACHI / CPI" 
-                  className="max-h-full object-contain"
-                  referrerPolicy="no-referrer"
                 />
               </div>
 
               {/* credential-logo-redseal */}
               <div className="h-16 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500">
-                {/* TODO: Replace this logo placeholder with final PNG asset */}
                 <img 
-                  src="https://www.red-seal.ca/images/rs_logo.png" 
+                  src="/images/credentials/redseal-logo.png" 
                   alt="Red Seal Carpenter" 
                   className="max-h-full object-contain"
-                  referrerPolicy="no-referrer"
                 />
               </div>
 
