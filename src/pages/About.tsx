@@ -77,12 +77,11 @@ export const About = () => {
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="aspect-[4/5] overflow-hidden bg-ink/5"
               >
-                  <img 
-                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop" 
-                    alt="Inspector" 
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" 
-                    referrerPolicy="no-referrer"
-                  />
+                 <img 
+  src="/images/about-jake.jpg" 
+  alt="Jake Choi, BC licensed inspector and Red Seal carpenter" 
+  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" 
+/>
               </motion.div>
               
               <motion.div 
