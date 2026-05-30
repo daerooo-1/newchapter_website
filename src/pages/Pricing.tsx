@@ -66,10 +66,13 @@ export const Pricing = () => {
   return (
     <div className="bg-primary min-h-screen pt-28 pb-20 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 max-w-2xl mx-auto">
-          <h1 className="text-5xl font-serif font-medium mb-6 text-wood-900">Pricing</h1>
-          <p className="text-wood-900/70 text-lg font-sans">Invest in peace of mind.</p>
-        </div>
+       <div className="text-center mb-12 max-w-2xl mx-auto">
+  <div className="mb-4 flex items-center justify-center text-accent">
+    <Logo className="w-3 h-3 animate-spin-slow" />
+  </div>
+  <h1 className="text-5xl font-serif font-medium mb-6 text-wood-900">Pricing</h1>
+  <p className="text-wood-900/70 text-lg font-sans">Invest in peace of mind.</p>
+</div>
         
         <div className="grid md:grid-cols-3 gap-8 items-stretch">
           {tiers.map((tier) => (
