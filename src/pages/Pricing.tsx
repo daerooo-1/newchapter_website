@@ -64,57 +64,58 @@ export const Pricing = () => {
   ];
 
   return (
-    <div className="bg-primary min-h-screen pt-32 pb-20 px-6 md:px-12">
+    <div className="bg-primary min-h-screen pt-28 pb-20 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20 max-w-2xl mx-auto">
-             <span className="text-xs font-bold uppercase tracking-widest mb-4 block flex items-center justify-center gap-2 opacity-100 text-accent font-sans">
-                <Logo className="w-3 h-3 animate-spin-slow" /> Investment
-             </span>
-            <h1 className="text-5xl font-serif font-medium mb-6 text-wood-900">Transparent Pricing</h1>
-            <p className="text-wood-900/70 text-lg font-sans">Invest in peace of mind.</p>
+        <div className="text-center mb-12 max-w-2xl mx-auto">
+          <h1 className="text-5xl font-serif font-medium mb-6 text-wood-900">Pricing</h1>
+          <p className="text-wood-900/70 text-lg font-sans">Invest in peace of mind.</p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 items-stretch">
-            {tiers.map((tier) => (
+          {tiers.map((tier) => (
             <div 
-                key={tier.name} 
-                className="group relative p-10 bg-white text-wood-900 min-h-[500px] flex flex-col justify-between transition-all duration-500 ease-out hover:-translate-y-4 hover:shadow-2xl hover:bg-wood-900 hover:text-primary cursor-default border border-wood-900/5 hover:border-accent"
+              key={tier.name} 
+              className="group relative p-8 bg-white text-wood-900 min-h-[440px] flex flex-col justify-between transition-all duration-500 ease-out hover:-translate-y-4 hover:shadow-2xl hover:bg-wood-900 hover:text-primary cursor-default border border-wood-900/5 hover:border-accent"
             >
-                <div>
-                    <h3 className="text-2xl font-serif font-medium mb-2 group-hover:text-accent transition-colors">{tier.name}</h3>
-                    <div className="text-4xl font-light mb-8 opacity-90 flex flex-col items-start gap-1 group-hover:opacity-100 font-sans">
-                        <span className="font-medium">{tier.price}</span>
-                        {tier.priceDetail && (
-                          <span className="text-sm opacity-50 font-normal uppercase tracking-wide">{tier.priceDetail}</span>
-                        )}
-                    </div>
-                    <ul className="space-y-4 mb-10">
-                    {tier.features.map((feature) => (
-                        <li key={feature} className="flex items-center gap-3 text-sm opacity-80 group-hover:opacity-100 transition-opacity font-sans">
-                        <Check size={16} className="text-accent shrink-0" /> {feature}
-                        </li>
-                    ))}
-                    </ul>
-                    {tier.showReadMore && (
-                      <button 
-                        onClick={scrollToDetailed}
-                        className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-accent hover:text-wood-900 group-hover:text-accent transition-colors mb-6"
-                      >
-                        Read More <ChevronDown size={14} className="animate-bounce" />
-                      </button>
-                    )}
+              <div>
+                <h3 className="text-2xl font-serif font-medium mb-2 group-hover:text-accent transition-colors">{tier.name}</h3>
+                <div className="text-4xl font-light mb-8 opacity-90 flex flex-col items-start gap-1 group-hover:opacity-100 font-sans">
+                  <span className="font-medium">{tier.price}</span>
+                  {tier.priceDetail && (
+                    <span className="text-sm opacity-50 font-normal uppercase tracking-wide">{tier.priceDetail}</span>
+                  )}
                 </div>
-             <Link to="/?scroll=contact" className="w-full block text-center py-4 border border-wood-900 text-wood-900 text-[10px] uppercase tracking-widest transition-all group-hover:bg-accent group-hover:border-accent group-hover:text-white hover:bg-wood-900 hover:text-white font-sans">
-  Request Quote
-</Link>
+                <ul className="space-y-4 mb-8">
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-3 text-sm opacity-80 group-hover:opacity-100 transition-opacity font-sans">
+                      <Check size={16} className="text-accent shrink-0" /> {feature}
+                    </li>
+                  ))}
+                </ul>
+                {tier.showReadMore && (
+                  <button 
+                    onClick={scrollToDetailed}
+                    className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-accent hover:text-wood-900 group-hover:text-accent transition-colors mb-6"
+                  >
+                    Read More <ChevronDown size={14} className="animate-bounce" />
+                  </button>
+                )}
+              </div>
+
+              <Link 
+                to="/?scroll=contact" 
+                className="w-full block text-center py-4 border border-wood-900 text-wood-900 text-[10px] uppercase tracking-widest transition-all group-hover:bg-accent group-hover:border-accent group-hover:text-white hover:bg-wood-900 hover:text-white font-sans"
+              >
+                Request Quote
+              </Link>
             </div>
-            ))}
+          ))}
         </div>
         
-        <div className="mt-16 text-center">
-            <p className="text-sm text-wood-900/60 uppercase tracking-widest font-medium font-sans">
-                * Pricing varies based on size, age, and complexity.
-            </p>
+        <div className="mt-10 text-center">
+          <p className="text-sm text-wood-900/60 uppercase tracking-widest font-medium font-sans">
+            * Pricing varies based on size, age, and complexity.
+          </p>
         </div>
 
         {/* Detailed Pricing Table */}
@@ -124,7 +125,7 @@ export const Pricing = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mt-32 pt-20 border-t border-wood-900/10"
+          className="mt-16 pt-16 border-t border-wood-900/10"
         >
           <div className="text-center mb-16">
             <h2 className="text-4xl font-serif font-medium text-wood-900 mb-4 uppercase tracking-tight">Detailed Residential Pricing</h2>
@@ -154,9 +155,13 @@ export const Pricing = () => {
               <h4 className="text-xl font-serif font-medium mb-2">Need a custom quote?</h4>
               <p className="text-sm opacity-70 font-sans">For properties over 5000 sf, multi-unit buildings, or specialized consulting, please contact us for a detailed proposal.</p>
             </div>
-           <Link to="/?scroll=contact" className="bg-accent text-white px-10 py-4 text-xs uppercase tracking-widest hover:bg-white hover:text-wood-900 transition-all font-sans font-bold">
-  Contact for Custom Quote
-</Link>
+
+            <Link 
+              to="/?scroll=contact" 
+              className="bg-accent text-white px-10 py-4 text-xs uppercase tracking-widest hover:bg-white hover:text-wood-900 transition-all font-sans font-bold"
+            >
+              Contact for Custom Quote
+            </Link>
           </div>
         </motion.div>
       </div>
