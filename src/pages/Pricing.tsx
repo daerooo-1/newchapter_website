@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { Check, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { motion } from "motion/react";
 
@@ -104,9 +103,9 @@ export const Pricing = () => {
                       </button>
                     )}
                 </div>
-                <Link to="/contact" className="w-full block text-center py-4 border border-wood-900 text-wood-900 text-[10px] uppercase tracking-widest transition-all group-hover:bg-accent group-hover:border-accent group-hover:text-white hover:bg-wood-900 hover:text-white font-sans">
-                Request Quote
-                </Link>
+                <a href="/#contact" className="w-full block text-center py-4 border border-wood-900 text-wood-900 text-[10px] uppercase tracking-widest transition-all group-hover:bg-accent group-hover:border-accent group-hover:text-white hover:bg-wood-900 hover:text-white font-sans">
+  Request Quote
+</a>
             </div>
             ))}
         </div>
@@ -154,9 +153,9 @@ export const Pricing = () => {
               <h4 className="text-xl font-serif font-medium mb-2">Need a custom quote?</h4>
               <p className="text-sm opacity-70 font-sans">For properties over 5000 sf, multi-unit buildings, or specialized consulting, please contact us for a detailed proposal.</p>
             </div>
-            <Link to="/contact" className="bg-accent text-white px-10 py-4 text-xs uppercase tracking-widest hover:bg-white hover:text-wood-900 transition-all font-sans font-bold">
-              Contact for Custom Quote
-            </Link>
+           <a href="/#contact" className="bg-accent text-white px-10 py-4 text-xs uppercase tracking-widest hover:bg-white hover:text-wood-900 transition-all font-sans font-bold">
+  Contact for Custom Quote
+</a>
           </div>
         </motion.div>
       </div>
