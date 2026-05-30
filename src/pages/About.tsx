@@ -69,7 +69,7 @@ export const About = () => {
               </motion.div>
           </motion.div>
 
-          <div className="md:col-span-5 relative">
+          <div className="md:col-span-5 relative md:pt-28">
               <motion.div 
                 initial={{ opacity: 0, scale: 1.05 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -89,11 +89,19 @@ export const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.6, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute -bottom-10 -left-10 md:-left-20 bg-white p-10 max-w-xs shadow-2xl border border-ink/5 hidden md:block"
+                className="absolute -bottom-16 -left-6 md:-left-24 bg-white p-8 max-w-[280px] shadow-2xl border border-ink/5 hidden md:block"
               >
-                  <p className="text-ink italic font-serif text-xl leading-relaxed">
-                    "Our mission is to provide the clarity you need to move forward with confidence."
-                  </p>
+                  <div className="space-y-3">
+                    <p className="text-ink font-serif text-2xl leading-tight">
+                      Jake Choi
+                    </p>
+                    <p className="text-ink/70 font-sans text-sm leading-relaxed uppercase tracking-[0.15em]">
+                      Owner &amp; Licensed Home Inspector
+                    </p>
+                    <p className="text-ink/50 font-sans text-xs leading-relaxed uppercase tracking-[0.15em]">
+                      CPBC #89584
+                    </p>
+                  </div>
                   <div className="mt-6 w-12 h-px bg-accent"></div>
               </motion.div>
           </div>
