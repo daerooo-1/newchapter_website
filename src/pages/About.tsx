@@ -177,7 +177,7 @@ export const About = () => {
               {/* credential-logo-consumer-protection */}
               <div className="h-16 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500">
                 <img 
-                  src="/images/credentials/cpbc-logo.png" 
+                  src="/images/cpbc-logo.png" 
                   alt="Consumer Protection BC Licensed Inspector" 
                   className="max-h-full object-contain"
                 />
@@ -186,7 +186,7 @@ export const About = () => {
               {/* credential-logo-redseal */}
               <div className="h-16 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500">
                 <img 
-                  src="/images/credentials/redseal-logo.png" 
+                  src="/images/redseal-logo.png" 
                   alt="Red Seal Carpenter" 
                   className="max-h-full object-contain"
                 />
