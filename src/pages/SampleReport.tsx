@@ -1,5 +1,5 @@
 import React from "react";
-import { Download, MoveUpRight } from "lucide-react";
+import { MoveUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import { SectionMarker } from "../components/SectionMarker";
 
@@ -29,15 +29,33 @@ export const SampleReport = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-end lg:pb-4"
+            className="flex flex-col gap-4 justify-end lg:pb-4"
           >
-            <button className="inline-flex items-center gap-6 bg-ink text-paper px-12 py-6 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-accent transition-all duration-500 group/btn">
-              View Sample Report
+            <a 
+              href="/SampleReport-Residential.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-between gap-6 bg-ink text-paper px-12 py-6 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-accent transition-all duration-500 group/btn"
+            >
+              View Residential Report
               <MoveUpRight 
                 size={16} 
                 className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" 
               />
-            </button>
+            </a>
+
+            <a 
+              href="/SampleReport-Commercial.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-between gap-6 border border-ink/20 text-ink px-12 py-6 text-[11px] font-bold uppercase tracking-[0.2em] hover:border-accent hover:text-accent transition-all duration-500 group/btn"
+            >
+              View Commercial Report
+              <MoveUpRight 
+                size={16} 
+                className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" 
+              />
+            </a>
           </motion.div>
         </div>
       </div>
